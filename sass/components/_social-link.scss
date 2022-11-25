@@ -1,0 +1,34 @@
+.social {
+  @include centredFlex;
+  justify-content: center;
+  gap: 10px;
+
+  &__text {
+    margin-bottom: 10px;
+    font-weight: 700;
+    @include text;
+    color: var(--title-text-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--icon-color);
+
+  transition: color 250ms var(--animation-function),
+    background-color 250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
+}

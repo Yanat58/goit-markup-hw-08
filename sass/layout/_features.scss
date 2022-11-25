@@ -1,0 +1,53 @@
+/* особливості */
+
+.features-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__icon {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 25px 0;
+    background-color: var(--button-bg-color);
+  }
+
+  &__title {
+    @include text;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--title-text-color);
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+}
+
+.features-list__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+}
