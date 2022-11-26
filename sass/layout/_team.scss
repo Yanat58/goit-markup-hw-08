@@ -6,17 +6,19 @@
   &__title {
     @include title;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 }
 
 .team-list {
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     margin: -15px;
   }
-  //
-  // gap: 30px;
-  // flex-basis: calc(100% / 4);
 }
 
 .team-list__item {
@@ -28,18 +30,17 @@
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 2 * 30px) / 2);
+    flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 
-  @media screen and (min-width: 1600px) {
-    width: calc((100% - 4 * 30px) / 4);
-    margin: 15px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }
 

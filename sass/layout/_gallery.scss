@@ -1,6 +1,6 @@
 /* section gsllery */
 .gallery {
-  @media screen and (max-width: 1599px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -29,7 +29,7 @@
 }
 
 .gallery-list__item {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }

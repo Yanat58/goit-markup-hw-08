@@ -6,16 +6,16 @@
 @import './base/reset';
 
 @import './components/container';
-// @import './components/header';
-// @import './components/button';
+@import './components/header';
+@import './components/button';
 @import './components/social-link';
 
-@import './layout/hero';
+// @import './layout/hero';
 @import './layout/features';
 @import './layout/gallery';
 @import './layout/team';
-// @import './layout/customers';
-// @import './components/footer';
+@import './layout/customers';
+@import './components/footer';
 // @import './layout/portfolio';
 // @import './components/checkbox';
 // @import './components/modal';
