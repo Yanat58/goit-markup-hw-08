@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--text-primary);
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
 }
@@ -20,7 +20,7 @@ ul {
   list-style: none;
 }
 
-a {
+.link {
   text-decoration: none;
   color: inherit;
 

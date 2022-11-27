@@ -4,11 +4,12 @@
   background-color: var(--button-bg-color);
 
   &__title {
-    @include title;
+    @include title(28px);
     margin-bottom: 30px;
 
     @media screen and (min-width: 1200px) {
       margin-bottom: 50px;
+      @include title;
     }
   }
 }
@@ -49,20 +50,14 @@
   text-align: center;
 
   &__title {
+    @include text-card;
     margin-bottom: 10px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @include text-card;
     color: var(--primary-text-color);
   }
 

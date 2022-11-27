@@ -10,10 +10,12 @@
   fill: currentColor;
 }
 .customers__title {
-  @include title;
+  @include title(28px);
   margin-bottom: 30px;
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    @include title;
   }
 }
 
@@ -26,10 +28,21 @@
   padding: 16px 0;
   color: var(--icon-color);
 
+  transition: color 250ms var(--animation-function), border-color,
+    250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+.customers__item {
   @media screen and (max-width: 767px) {
-    flex-basis: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-    width: 210px;
+    max-width: 210px;
   }
 
   @media screen and (min-width: 768px) {
@@ -42,14 +55,5 @@
     flex-basis: calc((100% - 6 * 30px) / 6);
     margin: 15px;
     width: 170px;
-  }
-
-  transition: color 250ms var(--animation-function), border-color,
-    250ms var(--animation-function);
-
-  &:hover,
-  &:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
   }
 }

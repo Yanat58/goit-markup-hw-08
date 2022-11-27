@@ -1,0 +1,19 @@
+// /* стилізуєм лого */
+
+.logo__text {
+  font-family: var(--text-second);
+  font-weight: 700;
+  font-size: 24;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    @include text-card(26px);
+  }
+}
+
+.logo__text--first-color {
+  color: #000000;
+}
