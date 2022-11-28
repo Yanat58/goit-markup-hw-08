@@ -2,21 +2,43 @@
 /* filter */
 
 .filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 
   &__list {
     display: flex;
     align-items: center;
-    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      justify-content: left;
+      flex-wrap: wrap;
+      margin: -4px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: none;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 34px;
+    }
   }
-  &__item:not(first-item) {
-    margin-left: 8px;
+
+  &__item:not(:first-child) {
+    @media screen and (min-width: 768px) {
+      margin-left: 8px;
+    }
   }
 }
 
 .button-second {
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 3 * 8px) / 3);
+    margin: 4px;
+  }
   display: inline-block;
   max-width: 130px;
   border-radius: 4px;

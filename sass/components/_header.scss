@@ -3,24 +3,26 @@
 .header {
   border-bottom: 1px solid #ececec;
 
-  // &__container {
-  //   @include centredFlex;
-  // }
-  // &__group {
-  //   margin-left: auto;
-  // }
+  &__container {
+    @include centredFlex;
+    justify-content: space-between;
+  }
+  &__group {
+    margin-left: auto;
+  }
 }
 
 /* navigation */
 .nav {
   @include centredFlex;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     flex-basis: 100%;
     justify-content: space-between;
   }
+
   &__icon {
     @media screen and (max-width: 767px) {
-      margin: 16px 10px 16px auto;
+      margin: 16px 0;
     }
     @media screen and (min-width: 768px) {
       display: none;
@@ -34,8 +36,8 @@
     margin-left: 83px;
   }
 
-  &__item:not(last-child) {
-    margin-left: 50px;
+  &__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -76,21 +78,34 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @include centredFlex;
 
-  &__item:not(last-child) {
-    margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    @include centredFlex;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__item:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
 
   &__icon {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
   }
 }
 .group__link {
   @include centredFlex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 
   font-weight: 500;
   font-size: 14px;
