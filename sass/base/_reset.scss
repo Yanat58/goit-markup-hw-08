@@ -20,17 +20,17 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
 
   transition: color 250ms var(--animation-function);
-}
-
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .button {
