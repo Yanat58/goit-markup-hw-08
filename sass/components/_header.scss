@@ -18,37 +18,37 @@
   }
 }
 
-.menu-button {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
+// .menu-button {
+//   display: inline-block;
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   background-color: transparent;
+//   cursor: pointer;
+// }
 
-.menu-button__icon {
-  @media screen and (max-width: 767px) {
-    margin: 16px 0;
-  }
+// .menu-button__icon {
+//   @media screen and (max-width: 767px) {
+//     margin: 16px 0;
+//   }
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.menu-button__icon--close {
-  display: none;
-}
-.menu-button__icon--close .is-open {
-  display: block;
-}
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
+// }
+// .menu-button__icon--close {
+//   display: none;
+// }
+// .menu-button__icon--close .is-open {
+//   display: block;
+// }
 
-.menu-button__icon--menu .is-open {
-  display: none;
-}
+// .menu-button__icon--menu .is-open {
+//   display: none;
+// }
 
-/* navigation */
-.nav {
+/* menu */
+.menu {
   @include centredFlex;
   flex-basis: 100%;
 
@@ -58,22 +58,22 @@
   @media screen and (min-width: 768px) {
     margin-left: 93px;
   }
-  &__list {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-    display: flex;
+}
+.nav-list {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
+
+  display: flex;
 
   &__item:not(:last-child) {
     margin-right: 50px;
   }
 }
-.nav__group {
+.menu__group {
   margin-left: auto;
 }
-.nav__link {
+.nav-list__link {
   position: relative;
   display: block;
   padding-top: 32px;
