@@ -25,9 +25,51 @@
             ><span class="logo__text">Web</span
             ><span class="logo__text logo__text--first-color">Studio</span>
           </a>
-          <svg class="header__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
+          <div class="container">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+
+            <ul class="menu">
+              <li><a href="" class="link">About</a></li>
+              <li><a href="" class="link">Products</a></li>
+              <li><a href="" class="link">Contacts</a></li>
+              <li><a href="" class="link">Career</a></li>
+            </ul>
+          </div>
+          <!-- <button class="menu-button is-open" type="button" data-menu-button>
+            <svg
+              class="menu-button__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобільного меню"
+            >
+              <use
+                class="menu-button__icon menu-button__icon--menu"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+              <use
+                class="menu-button__icon menu-button__icon--close"
+                href="./images/icons.svg#icon-close-header"
+              ></use>
+            </svg>
+          </button> -->
         </div>
 
         <div class="nav">
@@ -139,7 +181,7 @@
               <div class="gallery-list__img">
                 <img
                   class="img"
-                  src="./images/img1.jpg"
+                  src="./images/gallery/img1.jpg"
                   alt="робота за компютером"
                   width="370"
                   height="294"
@@ -151,7 +193,7 @@
               <div class="gallery-list__img">
                 <img
                   class="img"
-                  src="./images/img2.jpg"
+                  src="./images/gallery/img2.jpg"
                   alt="робота за ноутбуком синхронізовано з телефоном"
                   width="370"
                   height="294"
@@ -163,7 +205,7 @@
               <div class="gallery-list__img">
                 <img
                   class="img"
-                  src="./images/img3.jpg"
+                  src="./images/gallery/img3.jpg"
                   alt="робота з планшетом"
                   width="370"
                   height="294"
@@ -182,7 +224,7 @@
             <li class="team-list__item">
               <img
                 class="img"
-                src="./images/team4.jpg"
+                src="./images/team/img1.jpg"
                 alt="Ігор Дем'яненко Product Designer"
                 width="270"
                 height="260"
@@ -225,7 +267,7 @@
             <li class="team-list__item">
               <img
                 class="img"
-                src="./images/team5.jpg"
+                src="./images/team/img2.jpg"
                 alt="Ольга Рєпіна Frontend Developer"
                 width="270"
                 height="260"
@@ -268,7 +310,7 @@
             <li class="team-list__item">
               <img
                 class="img"
-                src="./images/team6.jpg"
+                src="./images/team/img3.jpg"
                 alt="Микола Тарасов Marketing"
                 width="270"
                 height="260"
@@ -311,7 +353,7 @@
             <li class="team-list__item">
               <img
                 class="img"
-                src="./images/team7.jpg"
+                src="./images/team/img4.jpg"
                 alt="Михайло Єрмаков UI Designer"
                 width="270"
                 height="260"
@@ -501,7 +543,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <form class="modal-form">
         <b class="modal-form__text">Залиште свої дані, ми вам передзвонимо</b>
         <label class="modal-form__field">
@@ -567,6 +609,34 @@
         </button>
       </form>
     </div>
-    <script src="./js/modal.js"></script> -->
+
+    <!-- menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

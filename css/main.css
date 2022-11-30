@@ -407,15 +407,36 @@ img {
   }
 }
 
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
-  .header__icon {
+  .menu-button__icon {
     margin: 16px 0;
   }
 }
 @media screen and (min-width: 768px) {
-  .header__icon {
+  .menu-button__icon {
     display: none;
   }
+}
+
+.menu-button__icon--close {
+  display: none;
+}
+
+.menu-button__icon--close .is-open {
+  display: block;
+}
+
+.menu-button__icon--menu .is-open {
+  display: none;
 }
 
 /* navigation */
