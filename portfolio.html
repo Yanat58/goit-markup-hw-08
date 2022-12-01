@@ -25,29 +25,42 @@
             ><span class="logo__text">Web</span
             ><span class="logo__text logo__text--first-color">Studio</span>
           </a>
-          <svg class="header__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобільного меню"
+            >
+              <use
+                class="menu-toggle__icon"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
         </div>
 
-        <div class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link link">Студія</a>
+        <div class="menu">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link link">Студія</a>
             </li>
-            <li class="nav__item">
+            <li class="nav-list__item">
               <a
                 href="./portfolio.html"
-                class="nav__link nav__link--current link"
+                class="nav-list__link nav-list__link--current link"
                 >Портфоліо</a
               >
             </li>
-            <li class="nav__item">
-              <a href="" class="nav__link link">Контакти</a>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link link">Контакти</a>
             </li>
           </ul>
 
-          <ul class="group nav__group">
+          <ul class="group menu__group">
             <li class="group__item">
               <a class="group__link link" href="mailto:info@devstudio.com">
                 <svg class="group__icon" width="16px" height="12px">
@@ -99,10 +112,17 @@
                 <div class="portfolio-link__thumb">
                   <img
                     class="img"
-                    src="./images/portfolio/img1.jpg"
+                    srcset="
+                      ./images/portfolio/img_mob@1x_450_294.jpg 450w,
+                      ./images/portfolio/img_mob@2x_900_588.jpg 900w,
+                      ./images/portfolio/img_tab@1x_354_294.jpg 354w,
+                      ./images/portfolio/img_tab@2x_708_588.jpg 708w,
+                      ./images/portfolio/img_ds@1x_370_294.jpg  370w,
+                      ./images/portfolio/img_ds@2x_740_588.jpg  740w
+                    "
+                    src="./images/portfolio/img_mob@1x_450_294.jpg"
                     alt="Колектив"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   />
                   <p class="portfolio-link__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -121,10 +141,17 @@
                 <div class="portfolio-link__thumb">
                   <img
                     class="img"
-                    src="./images/portfolio/img2.jpg"
+                    srcset="
+                      ./images/portfolio/img_mob@1x-1_450_294.jpg 450w,
+                      ./images/portfolio/img_mob@2x-1_900_588.jpg 900w,
+                      ./images/portfolio/img_tab@1x-1_354_294.jpg 354w,
+                      ./images/portfolio/img_tab@2x-1_708_588.jpg 708w,
+                      ./images/portfolio/img_ds@1x-1_370_294.jpg  370w,
+                      ./images/portfolio/img_ds@2x-1_740_588.jpg  740w
+                    "
+                    src="./images/portfolio/img_mob@1x-1_450_294.jpg"
                     alt="Баскетбол"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   />
                   <p class="portfolio-link__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -145,10 +172,17 @@
                 <div class="portfolio-link__thumb">
                   <img
                     class="img"
-                    src="./images/portfolio/img3.jpg"
+                    srcset="
+                      ./images/portfolio/img_mob@1x-2_450_294.jpg 450w,
+                      ./images/portfolio/img_mob@2x-2_900_588.jpg 900w,
+                      ./images/portfolio/img_tab@1x-2_354_294.jpg 354w,
+                      ./images/portfolio/img_tab@2x-2_708_588.jpg 708w,
+                      ./images/portfolio/img_ds@1x-2_370_294.jpg  370w,
+                      ./images/portfolio/img_ds@2x-2_740_588.jpg  740w
+                    "
+                    src="./images/portfolio/img_mob@1x-2_450_294.jpg"
                     alt="Візитка ресторану"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   />
                   <p class="portfolio-link__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -167,10 +201,17 @@
                 <div class="portfolio-link__thumb">
                   <img
                     class="img"
-                    src="./images/portfolio/img4.jpg"
+                    srcset="
+                      ./images/portfolio/img_mob@1x-3_450_294.jpg 450w,
+                      ./images/portfolio/img_mob@2x-3_900_588.jpg 900w,
+                      ./images/portfolio/img_tab@1x-3_354_294.jpg 354w,
+                      ./images/portfolio/img_tab@2x-3_708_588.jpg 708w,
+                      ./images/portfolio/img_ds@1x-3_370_294.jpg  370w,
+                      ./images/portfolio/img_ds@2x-3_740_588.jpg  740w
+                    "
+                    src="./images/portfolio/img_mob@1x-3_450_294.jpg"
                     alt="Навушники"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   />
                   <p class="portfolio-link__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -189,10 +230,17 @@
                 <div class="portfolio-link__thumb">
                   <img
                     class="img"
-                    src="./images/portfolio/img5.jpg"
+                    srcset="
+                      ./images/portfolio/img_mob@1x-4_450_294.jpg 450w,
+                      ./images/portfolio/img_mob@2x-4_900_588.jpg 900w,
+                      ./images/portfolio/img_tab@1x-4_354_294.jpg 354w,
+                      ./images/portfolio/img_tab@2x-4_708_588.jpg 708w,
+                      ./images/portfolio/img_ds@1x-4_370_294.jpg  370w,
+                      ./images/portfolio/img_ds@2x-4_740_588.jpg  740w
+                    "
+                    src="./images/portfolio/img_mob@1x-4_450_294.jpg"
                     alt="Коробочки"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   />
                   <p class="portfolio-link__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -211,10 +259,17 @@
                 <div class="portfolio-link__thumb">
                   <img
                     class="img"
-                    src="./images/portfolio/img6.jpg"
+                    srcset="
+                      ./images/portfolio/img_mob@1x-5_450_294.jpg 450w,
+                      ./images/portfolio/img_mob@2x-5_900_588.jpg 900w,
+                      ./images/portfolio/img_tab@1x-5_354_294.jpg 354w,
+                      ./images/portfolio/img_tab@2x-5_708_588.jpg 708w,
+                      ./images/portfolio/img_ds@1x-5_370_294.jpg  370w,
+                      ./images/portfolio/img_ds@2x-5_740_588.jpg  740w
+                    "
+                    src="./images/portfolio/img_mob@1x-5_450_294.jpg"
                     alt="Монітор"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   />
                   <p class="portfolio-link__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -235,10 +290,17 @@
                 <div class="portfolio-link__thumb">
                   <img
                     class="img"
-                    src="./images/portfolio/img7.jpg"
+                    srcset="
+                      ./images/portfolio/img_mob@1x-6_450_294.jpg 450w,
+                      ./images/portfolio/img_mob@2x-6_900_588.jpg 900w,
+                      ./images/portfolio/img_tab@1x-6_354_294.jpg 354w,
+                      ./images/portfolio/img_tab@2x-6_708_588.jpg 708w,
+                      ./images/portfolio/img_ds@1x-6_370_294.jpg  370w,
+                      ./images/portfolio/img_ds@2x-6_740_588.jpg  740w
+                    "
+                    src="./images/portfolio/img_mob@1x-6_450_294.jpg"
                     alt="Книжка"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   />
                   <p class="portfolio-link__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -257,10 +319,17 @@
                 <div class="portfolio-link__thumb">
                   <img
                     class="img"
-                    src="./images/portfolio/img8.jpg"
+                    srcset="
+                      ./images/portfolio/img_mob@1x-7_450_294.jpg 450w,
+                      ./images/portfolio/img_mob@2x-7_900_588.jpg 900w,
+                      ./images/portfolio/img_tab@1x-7_354_294.jpg 354w,
+                      ./images/portfolio/img_tab@2x-7_708_588.jpg 708w,
+                      ./images/portfolio/img_ds@1x-7_370_294.jpg  370w,
+                      ./images/portfolio/img_ds@2x-7_740_588.jpg  740w
+                    "
+                    src="./images/portfolio/img_mob@1x-7_450_294.jpg"
                     alt="Етикетка"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   />
                   <p class="portfolio-link__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -270,7 +339,7 @@
                 </div>
                 <div class="portfolio-wrap">
                   <h2 class="portfolio-wrap__title">Проєкт lab</h2>
-                  <p class="portfolio-lwrap__text">Маркетинг</p>
+                  <p class="portfolio-wrap__text">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -279,10 +348,17 @@
                 <div class="portfolio-link__thumb">
                   <img
                     class="img"
-                    src="./images/portfolio/img9.jpg"
+                    srcset="
+                      ./images/portfolio/img_mob@1x-8_450_294.jpg 450w,
+                      ./images/portfolio/img_mob@2x-8_900_588.jpg 900w,
+                      ./images/portfolio/img_tab@1x-8_354_294.jpg 354w,
+                      ./images/portfolio/img_tab@2x-8_708_588.jpg 708w,
+                      ./images/portfolio/img_ds@1x-8_370_294.jpg  370w,
+                      ./images/portfolio/img_ds@2x-8_740_588.jpg  740w
+                    "
+                    src="./images/portfolio/img_mob@1x-8_450_294.jpg"
                     alt="Комп"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   />
                   <p class="portfolio-link__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -389,5 +465,72 @@
         </div>
       </div>
     </footer>
+    <!-- menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобільного меню">
+          <use
+            class="menu-toggle__icon"
+            href="./images/icons.svg#icon-close_header"
+          ></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a
+            href="./index.html"
+            class="mobile-menu__link mobile-menu__link--current link"
+            >Студія</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link link"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111" class="mobile-contacts__link link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-contacts__link mobile-contacts__link--size link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a href="" class="link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

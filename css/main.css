@@ -418,6 +418,11 @@ img {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 @media screen and (min-width: 767px) {
   .menu {
     margin-left: 88px;
@@ -433,11 +438,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (max-width: 767px) {
-  .nav-list {
-    display: none;
-  }
 }
 .nav-list__item:not(:last-child) {
   margin-right: 50px;
@@ -683,8 +683,8 @@ img {
 .mobile-menu__link {
   display: block;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.187;
+  font-size: 8vw;
+  line-height: 1.19;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -697,9 +697,15 @@ img {
 
 .mobile-contacts__link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 7vw;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.mobile-contacts__link--size {
+  font-size: 5vw;
+  line-height: 1.16;
+  color: var(--primary-text-color);
 }
 
 .mobile-contacts {
@@ -722,7 +728,7 @@ img {
   display: flex;
   margin-right: 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 3.7vw;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -1331,6 +1337,9 @@ img {
 }
 
 .portfolio__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 450px;
 }
 @media screen and (max-width: 767px) {
@@ -1355,8 +1364,14 @@ img {
 }
 
 .portfolio-link {
-  display: block;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: -webkit-box-shadow 250ms var(--animation-function) color 250ms var(--animation-function);
   transition: -webkit-box-shadow 250ms var(--animation-function) color 250ms var(--animation-function);
   transition: box-shadow 250ms var(--animation-function) color 250ms var(--animation-function);
@@ -1399,6 +1414,9 @@ img {
 }
 
 .portfolio-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;

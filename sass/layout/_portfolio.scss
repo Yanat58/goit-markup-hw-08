@@ -76,6 +76,7 @@
   }
 }
 .portfolio__item {
+  display: flex;
   max-width: 450px;
 
   &:not(:last-child) {
@@ -97,8 +98,9 @@
 }
 
 .portfolio-link {
-  display: block;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   transition: box-shadow 250ms var(--animation-function) color 250ms
     var(--animation-function);
@@ -142,6 +144,7 @@
 }
 
 .portfolio-wrap {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
