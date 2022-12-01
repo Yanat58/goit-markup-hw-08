@@ -18,35 +18,6 @@
   }
 }
 
-// .menu-button {
-//   display: inline-block;
-//   margin: 0;
-//   padding: 0;
-//   border: none;
-//   background-color: transparent;
-//   cursor: pointer;
-// }
-
-// .menu-button__icon {
-//   @media screen and (max-width: 767px) {
-//     margin: 16px 0;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
-// .menu-button__icon--close {
-//   display: none;
-// }
-// .menu-button__icon--close .is-open {
-//   display: block;
-// }
-
-// .menu-button__icon--menu .is-open {
-//   display: none;
-// }
-
 /* menu */
 .menu {
   @include centredFlex;
