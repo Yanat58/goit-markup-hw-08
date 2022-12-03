@@ -99,8 +99,25 @@
     margin-right: 8px;
     fill: currentColor;
 
+    @media screen and (min-width: 767px) {
+      width: 14px;
+      height: 10px;
+    }
     @media screen and (min-width: 1200px) {
       margin-right: 10px;
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &__icon--size {
+    @media screen and (min-width: 767px) {
+      width: 10px;
+      height: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
     }
   }
 }

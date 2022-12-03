@@ -65,7 +65,7 @@
           <ul class="group menu__group">
             <li class="group__item">
               <a class="group__link link" href="mailto:info@devstudio.com">
-                <svg class="group__icon" width="16px" height="12px">
+                <svg class="group__icon">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
@@ -73,7 +73,7 @@
             </li>
             <li class="group__item">
               <a class="group__link link" href="tel:+380961111111">
-                <svg class="group__icon" width="10px" height="16px">
+                <svg class="group__icon group__icon--size">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -85,14 +85,14 @@
     </header>
     <!--Унікальний контент сторінки-->
     <main>
-      <!-- <section class="overlay">
+      <section class="overlay">
         <div class="hero overlay__hero">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="hero__button">
+          <button data-modal-open type="button" class="button hero__button">
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
@@ -555,6 +555,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- модальне вікно -->
+
     <div class="backdrop is-hidden" data-modal>
       <form class="modal-form">
         <b class="modal-form__text">Залиште свої дані, ми вам передзвонимо</b>
@@ -582,12 +585,11 @@
           </svg>
         </label>
 
-        <label class="modal-form__field">
+        <label class="modal-form__field modal-form__field--last">
           <span class="modal-form__label">Коментар</span>
           <textarea
             class="modal-form__comment"
             name="comment"
-            rows="6"
             placeholder="Введіть текст"
           ></textarea>
         </label>
@@ -610,7 +612,7 @@
           >
         </label>
 
-        <button class="button" type="submit">
+        <button class="button modal__btn" type="submit">
           <span>Відправити</span>
         </button>
 

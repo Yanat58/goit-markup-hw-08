@@ -1,16 +1,25 @@
 .checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
+  display: inline-block;
   margin-bottom: 30px;
-
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+}
+.modal-form-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  font-size: 2.5vw;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }
 
 .checkbox__input {
@@ -33,12 +42,18 @@
   opacity: 1;
 }
 
-.checkbox__text,
-.checkbox__text--link {
-  user-select: none;
+.checkbox__text {
+  margin-left: 8px;
 }
 
 .checkbox__text--link {
+  margin-left: 1px;
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+.checkbox__icon {
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
