@@ -154,46 +154,87 @@
           <ul class="gallery-list">
             <li class="gallery-list__item">
               <div class="gallery-list__img">
-                <img
-                  class="img"
-                  srcset="
-                    ./images/gallery/img1_ds@1x.jpg         370w,
-                    ./images/gallery/img1_ds@2x_740_588.jpg 740w
-                  "
-                  src="./images/gallery/img1_ds@1x.jpg"
-                  alt="робота за компютером"
-                  sizes="(min-width: 1200px) 370px, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery/img_ds@1x_1_370.webp 1x,
+                      ./images/gallery/img_ds@2x_740.webp   2x
+                    "
+                    type="image/web"
+                  />
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/gallery/img1_ds@1x.jpg         1x,
+                      ./images/gallery/img1_ds@2x_740_588.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img"
+                    src="./images/gallery/img1_ds@1x.jpg"
+                    alt="робота за компютером"
+                  />
+                </picture>
                 <p class="gallery-list__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="gallery-list__item">
               <div class="gallery-list__img">
-                <img
-                  class="img"
-                  srcset="
-                    ./images/gallery/img2_ds@1x.jpg         370w,
-                    ./images/gallery/img2_ds@2x_740_588.jpg 740w
-                  "
-                  src="./images/gallery/img2_ds@1x.jpg"
-                  alt="робота за ноутбуком синхронізовано з телефоном"
-                  sizes="(min-width: 1200px) 370px, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery/img_ds@1x_2_370.webp 1x,
+                      ./images/gallery/img_ds@2x_1_740.webp 2x
+                    "
+                    type="image/web"
+                  />
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/gallery/img2_ds@1x.jpg         1x,
+                      ./images/gallery/img2_ds@2x_740_588.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img"
+                    src="./images/gallery/img2_ds@1x.jpg"
+                    alt="робота за ноутбуком синхронізовано з телефоном"
+                  />
+                </picture>
+
                 <p class="gallery-list__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="gallery-list__item">
               <div class="gallery-list__img">
-                <img
-                  class="img"
-                  srcset="
-                    ./images/gallery/img3_ds@1x.jpg         370w,
-                    ./images/gallery/img3_ds@2x_740_588.jpg 740w
-                  "
-                  src="./images/gallery/img3_ds@1x.jpg"
-                  alt="робота з планшетом"
-                  sizes="(min-width: 1200px) 370px, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery/img_ds@1x_3_370.webp 1x,
+                      ./images/gallery/img_ds@2x_2_740.webp 2x
+                    "
+                    type="image/web"
+                  />
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/gallery/img3_ds@1x.jpg         1x,
+                      ./images/gallery/img3_ds@2x_740_588.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img"
+                    src="./images/gallery/img3_ds@1x.jpg"
+                    alt="робота з планшетом"
+                  />
+                </picture>
+
                 <p class="gallery-list__text">Дизайнерські рішення</p>
               </div>
             </li>
