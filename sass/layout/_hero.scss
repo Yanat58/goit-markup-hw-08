@@ -1,7 +1,7 @@
 /* hero overlay */
 
 .overlay {
-  max-width: 1600px;
+  max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -15,7 +15,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/hero/img_mob@1x_480_400.jpg');
+    url('../images/hero/img_mob@1x_480.jpg');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -25,16 +25,17 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/hero/img_mob@2x_960_800.jpg');
+      url('../images/hero/img_mob@2x_960.jpg');
   }
 
   @media screen and (min-width: 481px) {
+    max-width: 768px;
     background-image: linear-gradient(
         0deg,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/hero/img_tab@1x_768_400.jpg');
+      url('../images/hero/img_tab@1x_768.jpg');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -44,12 +45,13 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('../images/hero/img_tab@2x_768_400.jpg');
+        url('../images/hero/img_tab@2x_1536.jpg');
     }
   }
 
-  @media screen and (min-width: 769px) {
-    height: 600px;
+  @media screen and (min-width: 768px) {
+    max-width: 1600px;
+    height: 400px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(
@@ -57,7 +59,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/hero/img_ds@1x_1600_600.jpg');
+      url('../images/hero/img_ds@1x_1600.jpg');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -67,7 +69,11 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('../images/hero/img_ds@2x_3200_1200.jpg');
+        url('../images/hero/img_ds@2x_3200.jpg');
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 600px;
     }
   }
 

@@ -2,12 +2,9 @@ body {
   font-family: var(--text-primary);
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
-
-  @media screen and (max-width: 1199px) {
-    &.modal-open {
-      overflow: hidden;
-    }
-  }
+  
+overflow: hidden;
+  
 }
 
 h1,
