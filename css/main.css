@@ -1046,7 +1046,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .team-list__item:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1280,9 +1280,6 @@ img {
 }
 
 /* footer-newsletter */
-.footer-newsletter {
-  margin-top: 60px;
-}
 @media screen and (min-width: 1200px) {
   .footer-newsletter {
     margin-left: 94px;
